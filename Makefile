@@ -29,3 +29,7 @@ clobber: clear
 	(cd tests; $(MAKE) clobber)
 
 always:
+default:
+	find tests -name \*.c -exec gcc -o {}.exe {} \;
+foobar:
+	find tests -name \*.c -exec gcc -o {}.exe {} \;
